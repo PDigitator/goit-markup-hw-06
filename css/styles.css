@@ -35,7 +35,7 @@
   /* Others */
   --indent: 30px;
   --items: 3;
-  --anim-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --anim-cubic: 3250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Base styles */
@@ -765,6 +765,8 @@ img {
   outline-offset: -2px;
   border: 2px solid var(--modal-form-check-border-color);
   border-radius: 2px;
+
+  transition: outline var(--anim-cubic), background-color var(--anim-cubic);
 }
 
 .modal-form-checkbox:checked {
