@@ -741,7 +741,22 @@ img {
   margin-bottom: 30px;
 }
 
-.modal-form-chekbox {
+.container-checkbox {
+  position: relative;
+  display: flex;
+}
+
+.modal-agreement-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+
+  fill: var(--secondary-text-color);
+}
+
+.modal-form-checkbox {
   appearance: none;
   width: 16px;
   height: 15px;
@@ -752,7 +767,7 @@ img {
   border-radius: 2px;
 }
 
-.modal-form-chekbox:checked {
+.modal-form-checkbox:checked {
   outline: 2px solid var(--accent-color);
   background-color: var(--accent-color);
 }
