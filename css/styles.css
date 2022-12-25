@@ -30,6 +30,7 @@
   --close-cross-border-color: rgba(0, 0, 0, 0.1);
   --footer-form-border-color: rgba(255, 255, 255, 0.3);
   --modal-form-border-color: rgba(33, 33, 33, 0.2);
+  --modal-form-check-border-color: #212121;
 
   /* Others */
   --indent: 30px;
@@ -730,6 +731,45 @@ img {
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: var(--modal-form-messge-placeholder-color);
+}
+
+.modal-form-agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.modal-form-chekbox {
+  appearance: none;
+  width: 16px;
+  height: 15px;
+
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  border: 2px solid var(--modal-form-check-border-color);
+  border-radius: 2px;
+}
+
+.modal-form-chekbox:checked {
+  outline: 2px solid var(--accent-color);
+  background-color: var(--accent-color);
+}
+
+.modal-agreement-desc,
+.link.modal-agreement {
+  user-select: none;
+
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--primary-text-color);
+}
+
+.link.modal-agreement {
+  color: var(--accent-color);
+  text-decoration-line: underline;
+  text-decoration-skip-ink: none;
 }
 
 /* Кнопки */
