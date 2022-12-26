@@ -677,7 +677,7 @@ img {
 
   font-size: 14px;
   line-height: calc(16 / 14);
-  color: var(--primary-text-color);
+  color: var(--title-text-color);
 
   border: 1px solid var(--modal-form-border-color);
   border-radius: 4px;
@@ -711,7 +711,7 @@ img {
 
   font-size: 14px;
   line-height: calc(16 / 14);
-  color: var(--primary-text-color);
+  color: var(--title-text-color);
 
   border: 1px solid var(--modal-form-border-color);
   border-radius: 4px;
@@ -977,7 +977,9 @@ img {
 
 .portfolio-container {
   padding: 19px 23px;
-  border: 1px solid var(--portfolio-list-item-border-color);
+  border-right: 1px solid var(--portfolio-list-item-border-color);
+  border-bottom: 1px solid var(--portfolio-list-item-border-color);
+  border-left: 1px solid var(--portfolio-list-item-border-color);
 }
 
 .portfolio-button.list {
